@@ -1,4 +1,4 @@
-package _06Array;
+package _6Array;
 
 import java.util.Scanner;
 

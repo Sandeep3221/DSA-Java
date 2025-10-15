@@ -1,4 +1,4 @@
-package _06Array;
+package _6Array;
 
 public class array {
         public static void main(String[] args) {
