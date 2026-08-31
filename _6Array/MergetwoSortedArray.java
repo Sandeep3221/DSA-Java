@@ -1,15 +1,13 @@
 package _6Array;
-
-import java.util.Vector;
-
+import java.util.ArrayList;
 public class MergetwoSortedArray {
         public static void main(String[] args) {
                 int[] arr1 = {1, 3, 5, 7};
                 int[] arr2 = {2, 4, 6, 8};
-                Vector<Integer> mergeArr=new Vector<>();
+                ArrayList<Integer> mergeArr = new ArrayList<>();
                 int i=0,j=0;
                 while (i<arr1.length && j<arr2.length) {
-                        if(arr1[i]<=arr2[j]){
+                        if(arr1[i]<arr2[j]){
                                 mergeArr.add(arr1[i]);
                                 i++;
                         }else{
@@ -17,15 +15,14 @@ public class MergetwoSortedArray {
                                 j++;
                         }
                 }
-                //adding remaining elements  if any
                 while (i<arr1.length) {
                         mergeArr.add(arr1[i]);
                         i++;
                 }
-                while (i<arr2.length) {
-                        mergeArr.add(arr2[i]);
+                while (j<arr2.length) {
+                        mergeArr.add(arr2[j]);
                         j++;
                 }
-                System.out.println("Merged Sorted Array using Vector: " + mergeArr);
+                System.out.println("Merged Sorted Array using ArrayList: " + mergeArr);
         }
 }

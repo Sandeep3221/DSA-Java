@@ -11,6 +11,6 @@ public class maxOfThree {
                 int b=sc.nextInt();
                 int c=sc.nextInt();
                 System.out.println("The max of nums "+Math.max(Math.max(a, b),c));
-                //try this same thig for 4 numbers
+                //try this same thing for 4 numbers
         }
 }
