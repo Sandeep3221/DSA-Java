@@ -3,7 +3,7 @@ package _11LinkedList;
 class Node{
         int data;
         Node next;// khud ka banaya hua data structure
-        Node(int data){
+        Node(int data){ 
                 this.data=data;
                 this.next=null;
         }

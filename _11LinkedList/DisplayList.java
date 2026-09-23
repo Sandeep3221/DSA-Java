@@ -5,7 +5,8 @@ public class DisplayList {
                 Node temp=head;
                 while (temp!=null) {
                         System.out.println(temp.data+" ");
-                        temp=temp.next;
+                        temp=temp.next;//temp ko agge leke chalo bass
+                        //ye aek tarike are index hi hai jo agge leke ja rahe hai
                 }
         }
         public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class DisplayList {
                 Node c= new  Node(30); 
                 Node d= new  Node(40); 
                 Node e= new  Node(50); 
-                a.next=b;
+                a.next=b; 
                 b.next=c;
                 c.next=d;
                 d.next=e;
